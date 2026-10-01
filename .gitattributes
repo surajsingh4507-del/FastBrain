@@ -1,0 +1,3 @@
+# Benchmark task files are hashed; keep their bytes exactly as built.
+benchmarks/decisions/tasks/** -text
+src/fastbrain/bench/decisions/tasks.json -text

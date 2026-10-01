@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: If you use FastBrain in research or a publication, please cite it as below.
+title: "FastBrain: a decision plane for AI agents"
+abstract: >-
+  An open-source runtime that answers the routine decisions of AI agents with
+  rules and small calibrated models, reserves generative models for the steps
+  that need them, and traces every decision with its plane, confidence,
+  latency and cost.
+authors:
+  - family-names: Kumar
+    given-names: Suraj
+repository-code: https://github.com/surajsingh4507-del/FastBrain-
+license: Apache-2.0
+version: 0.4.1
+date-released: 2026-09-25
+keywords:
+  - agents
+  - large language models
+  - decision models
+  - calibration
+  - observability
