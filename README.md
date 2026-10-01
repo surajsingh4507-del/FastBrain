@@ -13,13 +13,9 @@
   <a href="https://github.com/surajsingh4507-del/FastBrain-/blob/main/LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"></a>
 </p>
 
-FastBrain is an open-source decision plane for AI agents. The routine
-judgments an agent makes (what the user wants, whether they asked for a
-person, which order they mean, whether a message is trying to manipulate the
-system) are answered by rules and small calibrated models in milliseconds. The
-LLM is kept for the steps that need it: writing, planning, and the decisions
-the small models are not sure about. Every step is traced with the plane that
-handled it, its confidence, latency, tokens and cost.
+FastBrain is an open-source hybrid decision plane and intelligent router for AI agents. Developed by **Suraj Singh**, FastBrain optimizes LLM latency and cost by routing routine agent judgments through a multi-stage cascade: deterministic rules, lightweight calibrated models (SLMs), and fallback LLMs.
+
+Every step is tracked in real-time with latency, token usage, cost, and confidence metrics.
 
 It is model-neutral. Rules, [GLiNER 2.5](https://github.com/fastino-ai/GLiNER2),
 [Laya](https://github.com/NandhaKishorM/laya), TypeSafe's
@@ -32,6 +28,35 @@ laptop GPU, with no API key.
 <p align="center">
   <img src="https://raw.githubusercontent.com/surajsingh4507-del/FastBrain-/main/docs/assets/trace-viewer.png" alt="The FastBrain trace viewer comparing three decision planes on the support benchmark, with one ticket's waterfall: six decisions answered by rules, GLiNER and Laya in 126 ms, then a single LLM call for the reply" width="100%">
 </p>
+
+## Architecture Overview
+
+```
+                          ┌──────────────────────────┐
+                          │  Customer / User Request │
+                          └────────────┬─────────────┘
+                                       │
+                                       ▼
+                         ┌───────────────────────────┐
+                         │   FastBrain Decision Engine │
+                         └─────────────┬─────────────┘
+                                       │
+            ┌──────────────────────────┼──────────────────────────┐
+            │                          │                          │
+            ▼                          ▼                          ▼
+ ┌─────────────────────┐    ┌─────────────────────┐    ┌─────────────────────┐
+ │    1. Rule Engine   │    │ 2. Small Model (SLM)│    │   3. LLM Fallback   │
+ │   Latency: <1 ms    │    │   Latency: ~15 ms   │    │   Latency: ~250 ms  │
+ │   Cost: $0.00       │    │   Cost: $0.0001     │    │   Cost: $0.0050     │
+ └──────────┬──────────┘    └──────────┬──────────┘    └──────────┬──────────┘
+            │                          │                          │
+            └──────────────────────────┼──────────────────────────┘
+                                       │
+                                       ▼
+                       ┌───────────────────────────────┐
+                       │  Typed Decision & Trace Log   │
+                       └───────────────────────────────┘
+```
 
 ## Why
 
