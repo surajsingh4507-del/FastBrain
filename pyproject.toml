@@ -75,7 +75,7 @@ anthropic = ["anthropic>=1.0"]
 otel = [
   "opentelemetry-api>=1.25",
   "opentelemetry-sdk>=1.25",
-  "opentelemetry-exporter-otlp-proto-http>=1.25",
+  "opentelemetry-exporter-otlp-proto-http>=1.45.0",
 ]
 # Public dataset benchmarks.
 bench = ["datasets>=3.0"]
