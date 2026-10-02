@@ -84,7 +84,7 @@ langgraph = ["langgraph>=1.0"]
 openai-agents = ["openai-agents>=0.22"]
 # The decision server (fastbrain serve) and MCP tools (fastbrain mcp).
 server = ["fastapi>=0.115", "uvicorn>=0.30"]
-mcp = ["mcp>=1.10"]
+mcp = ["mcp>=2.2.0"]
 all = ["fastbrain[local,openai,anthropic,otel,bench,langgraph,openai-agents,server,mcp]"]
 dev = [
   "pytest>=8",
@@ -98,7 +98,7 @@ dev = [
   "openai-agents>=0.22",
   "pydantic-ai-slim>=1.0",
   "fastapi>=0.115",
-  "mcp>=1.10",
+  "mcp>=2.2.0",
 ]
 
 [project.urls]
