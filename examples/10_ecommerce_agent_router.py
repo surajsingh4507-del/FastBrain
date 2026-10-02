@@ -1,5 +1,5 @@
-"""
-FastBrain E-Commerce Intelligent Support & Order Routing Agent
+"""FastBrain E-Commerce Intelligent Support & Order Routing Agent.
+
 Author: Suraj Singh (surajsingh4507-del)
 
 This example demonstrates how FastBrain routes customer inquiries for an e-commerce platform:
@@ -8,10 +8,9 @@ This example demonstrates how FastBrain routes customer inquiries for an e-comme
 3. Hosted LLM only when confidence threshold is unmet or deep reasoning is required.
 """
 
-import os
-from fastbrain import Choice, Engine, Question
-from fastbrain.providers import Rules, LLMDecider
+from fastbrain import Choice, Engine
 from fastbrain.llm import ScriptedLLM
+from fastbrain.providers import LLMDecider, Rules
 
 # Define domain-specific questions for E-Commerce Routing
 INTENT_QUESTION = Choice(
@@ -26,7 +25,9 @@ PRIORITY_QUESTION = Choice(
     options=["low", "medium", "high", "urgent"],
 )
 
-def run_ecommerce_router():
+
+def run_ecommerce_router() -> None:
+    """Execute the e-commerce routing demonstration."""
     print("=" * 60)
     print("  FastBrain E-Commerce Intelligent Routing Agent")
     print("  Author: Suraj Singh")
@@ -34,9 +35,24 @@ def run_ecommerce_router():
 
     # 1. Setup Rule Engine for deterministic patterns
     rules = Rules()
-    rules.add("customer_intent", lambda msg: "order_status" if "track" in msg.lower() or "where is my order" in msg.lower() else None)
-    rules.add("customer_intent", lambda msg: "refund_request" if "charged twice" in msg.lower() or "money back" in msg.lower() else None)
-    rules.add("issue_priority", lambda msg: "urgent" if "unauthorized" in msg.lower() or "stolen" in msg.lower() else None)
+    rules.add(
+        "customer_intent",
+        lambda msg: "order_status"
+        if "track" in msg.lower() or "where is my order" in msg.lower()
+        else None,
+    )
+    rules.add(
+        "customer_intent",
+        lambda msg: "refund_request"
+        if "charged twice" in msg.lower() or "money back" in msg.lower()
+        else None,
+    )
+    rules.add(
+        "issue_priority",
+        lambda msg: "urgent"
+        if "unauthorized" in msg.lower() or "stolen" in msg.lower()
+        else None,
+    )
 
     # 2. Setup LLM Decider as fallback for complex queries
     mock_llm_answers = {
@@ -44,7 +60,7 @@ def run_ecommerce_router():
         "issue_priority": "high",
     }
     llm = ScriptedLLM(responses=mock_llm_answers)
-    
+
     # 3. Create FastBrain Engine with threshold cascading
     engine = Engine(providers=[rules, LLMDecider(llm)], llm=llm, threshold=0.85)
 
@@ -60,8 +76,13 @@ def run_ecommerce_router():
         intent_decision = engine.decide(msg, INTENT_QUESTION)
         priority_decision = engine.decide(msg, PRIORITY_QUESTION)
 
-        print(f"  └─ Intent:   {intent_decision.value:<18} (Confidence: {intent_decision.confidence:.2f}, Provider: {intent_decision.provider})")
-        print(f"  └─ Priority: {priority_decision.value:<18} (Confidence: {priority_decision.confidence:.2f}, Provider: {priority_decision.provider})")
+        print(
+            f"  └─ Intent:   {intent_decision.value:<18} (Confidence: {intent_decision.confidence:.2f}, Provider: {intent_decision.provider})"
+        )
+        print(
+            f"  └─ Priority: {priority_decision.value:<18} (Confidence: {priority_decision.confidence:.2f}, Provider: {priority_decision.provider})"
+        )
+
 
 if __name__ == "__main__":
     run_ecommerce_router()

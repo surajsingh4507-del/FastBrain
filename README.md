@@ -6,8 +6,8 @@
   <a href="https://pypi.org/project/fastbrain/"><img alt="PyPI" src="https://img.shields.io/pypi/v/fastbrain.svg"></a>
   <a href="https://pypi.org/project/fastbrain/"><img alt="Python 3.10 to 3.13" src="https://img.shields.io/pypi/pyversions/fastbrain.svg"></a>
   <a href="https://github.com/surajsingh4507-del/FastBrain-/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/surajsingh4507-del/FastBrain-/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://surajsingh4507-del.github.io/FastBrain/"><img alt="Docs" src="https://img.shields.io/badge/docs-surajsingh4507-del.github.io-blue.svg"></a>
-  <a href="https://surajsingh4507-del.github.io/FastBrain/decision-benchmark/leaderboard/"><img alt="Decision benchmark" src="https://img.shields.io/badge/decision%20benchmark-leaderboard-brightgreen.svg"></a>
+  <a href="https://surajsingh4507-del.github.io/FastBrain-/"><img alt="Docs" src="https://img.shields.io/badge/docs-surajsingh4507-del.github.io-blue.svg"></a>
+  <a href="https://surajsingh4507-del.github.io/FastBrain-/decision-benchmark/leaderboard/"><img alt="Decision benchmark" src="https://img.shields.io/badge/decision%20benchmark-leaderboard-brightgreen.svg"></a>
   <a href="https://scorecard.dev/viewer/?uri=github.com/surajsingh4507-del/FastBrain-"><img alt="OpenSSF Scorecard" src="https://api.scorecard.dev/projects/github.com/surajsingh4507-del/FastBrain-/badge"></a>
   <a href="https://github.com/surajsingh4507-del/FastBrain-/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/surajsingh4507-del/FastBrain-.svg"></a>
   <a href="https://github.com/surajsingh4507-del/FastBrain-/blob/main/LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"></a>

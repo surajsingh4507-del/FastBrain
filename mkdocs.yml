@@ -1,6 +1,6 @@
 site_name: FastBrain
 site_description: The decision plane for AI agents. Rules and small calibrated models make the routine decisions, the LLM is reserved for the steps that need thought.
-site_url: https://surajsingh4507-del.github.io/FastBrain/
+site_url: https://surajsingh4507-del.github.io/FastBrain-/
 repo_url: https://github.com/surajsingh4507-del/FastBrain-
 repo_name: surajsingh4507-del/FastBrain-
 edit_uri: edit/main/docs/
