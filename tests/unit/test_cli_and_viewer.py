@@ -4,10 +4,10 @@ import json
 
 from typer.testing import CliRunner
 
-from tests.conftest import FakeProvider, choice_answer
 from fastbrain import Choice, Engine, JSONLSink, MemorySink, Tracer, YesNo
 from fastbrain.cli.main import app
 from fastbrain.tracing.viewer import build_viewer, collect_traces
+from tests.conftest import FakeProvider, choice_answer
 
 runner = CliRunner()
 

@@ -4,7 +4,6 @@ import json
 
 import pytest
 
-from tests.unit.test_support_demo import SCENARIOS, Oracle, _reply
 from fastbrain import Engine
 from fastbrain.bench import (
     expected_calibration_error,
@@ -17,6 +16,7 @@ from fastbrain.bench.intents import ChoiceEvaluation, _cascade
 from fastbrain.bench.report import support_markdown, support_table
 from fastbrain.demo.support import support_rules
 from fastbrain.llm import ScriptedLLM
+from tests.unit.test_support_demo import SCENARIOS, Oracle, _reply
 
 
 def test_percentile() -> None:

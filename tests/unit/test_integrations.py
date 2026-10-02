@@ -5,10 +5,10 @@ import json
 
 import pytest
 
-from tests.conftest import FakeProvider, choice_answer, yes_answer
 from fastbrain import Choice, Engine, Tracer, YesNo
 from fastbrain.integrations import Router, ToolBlockedError, gate, last_user_text, route
 from fastbrain.providers import Rules
+from tests.conftest import FakeProvider, choice_answer, yes_answer
 
 INTENT = Choice(
     "What does the customer want?", options=["refund", "order_status", "other"], name="intent"

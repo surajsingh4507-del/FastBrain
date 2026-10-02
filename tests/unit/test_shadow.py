@@ -7,11 +7,11 @@ import threading
 import pytest
 from typer.testing import CliRunner
 
-from tests.conftest import FakeProvider, choice_answer
 from fastbrain import Answer, Choice, Engine, Extract, MemorySink, Plane, Score, Tracer, YesNo
 from fastbrain.bench.metrics import wilson_interval
 from fastbrain.cli.shadow import shadow_app
 from fastbrain.shadow import Shadow, agree, build_report, export_labels, read_log
+from tests.conftest import FakeProvider, choice_answer
 
 INTENT = Choice(
     "What does the customer want?", options=["refund", "status", "other"], name="intent"

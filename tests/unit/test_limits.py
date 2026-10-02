@@ -4,7 +4,6 @@ import time
 
 import pytest
 
-from tests.conftest import FakeProvider, choice_answer
 from fastbrain import (
     Choice,
     ConfigurationError,
@@ -19,6 +18,7 @@ from fastbrain import (
 )
 from fastbrain.llm import ScriptedLLM
 from fastbrain.pricing import Price, PriceTable
+from tests.conftest import FakeProvider, choice_answer
 
 INTENT = Choice(
     "What does the customer want?", options=["refund", "status", "other"], name="intent"

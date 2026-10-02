@@ -2,9 +2,9 @@ from __future__ import annotations
 
 import json
 
-from tests.conftest import FakeProvider, choice_answer
 from fastbrain import Choice, Engine, JSONLSink, Plane, Tracer
 from fastbrain.tracing.export import drift_report, export_trace_labels, iter_decisions
+from tests.conftest import FakeProvider, choice_answer
 
 INTENT = Choice(
     "What does the customer want?", options=["refund", "status", "other"], name="intent"

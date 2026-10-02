@@ -5,9 +5,9 @@ import json
 
 import pytest
 
-from tests.conftest import FakeProvider, choice_answer, yes_answer
 from fastbrain import Answer, Choice, Engine, Score, Status, Tracer, YesNo
 from fastbrain.providers import Rules, SystemOne
+from tests.conftest import FakeProvider, choice_answer, yes_answer
 
 pytest.importorskip("fastapi")
 from fastapi.testclient import TestClient

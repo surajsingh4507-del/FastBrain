@@ -4,7 +4,6 @@ import asyncio
 
 import pytest
 
-from tests.conftest import FakeProvider, choice_answer, yes_answer
 from fastbrain import (
     Answer,
     Choice,
@@ -18,6 +17,7 @@ from fastbrain import (
     summarize,
 )
 from fastbrain.llm import ScriptedLLM
+from tests.conftest import FakeProvider, choice_answer, yes_answer
 
 INTENT = Choice(
     "What does the customer want?", options=["refund", "status", "other"], name="intent"

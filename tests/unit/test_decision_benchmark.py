@@ -4,7 +4,6 @@ import json
 
 import pytest
 
-from tests.conftest import FakeProvider
 from fastbrain import Answer, Choice, Extract, Kind, Score, YesNo
 from fastbrain.bench.decisions import (
     leaderboard_markdown,
@@ -16,6 +15,7 @@ from fastbrain.bench.decisions import (
     verify_result,
 )
 from fastbrain.providers.base import render_state
+from tests.conftest import FakeProvider
 
 
 def _key(state) -> str:
