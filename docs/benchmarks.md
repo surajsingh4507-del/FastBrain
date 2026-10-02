@@ -76,7 +76,7 @@ fastbrain bench support                                  # fully local
 ### Hosted results
 
 Full reports, results files and trace viewers are in
-[`benchmarks/results`](https://github.com/surajsingh4507-del/FastBrain-/tree/main/benchmarks/results),
+[`benchmarks/results`](https://github.com/surajsingh4507-del/FastBrain/tree/main/benchmarks/results),
 one directory per model (`support-openrouter-*`).
 
 | Model | Mode | Success | Order id | LLM calls for decisions | Decision time | p50 / p95 | Billed per 1k |
@@ -109,7 +109,7 @@ decider held up on every model.
 
 Qwen3-1.7B running in-process through Transformers on the laptop GPU, so every
 number reproduces offline with no key
-([report](https://github.com/surajsingh4507-del/FastBrain-/blob/main/benchmarks/results/support-local/report.md)).
+([report](https://github.com/surajsingh4507-del/FastBrain/blob/main/benchmarks/results/support-local/report.md)).
 With a weak fallback, hybrid beats the LLM-only design outright: the small
 models and rules are more accurate than the 1.7B model on the questions they
 take, and all three hybrid misses are intents the 1.7B model answered as
@@ -169,7 +169,7 @@ simulates the cascade (GLiNER, then Laya, then the LLM) at every threshold.
 | Claude Haiku 4.5 | 76.2% | 1412 ms | $0.681 |
 
 With Qwen 3.7 Flash as the fallback
-([report](https://github.com/surajsingh4507-del/FastBrain-/blob/main/benchmarks/results/intents-banking77-qwen3.7-flash/report.md)):
+([report](https://github.com/surajsingh4507-del/FastBrain/blob/main/benchmarks/results/intents-banking77-qwen3.7-flash/report.md)):
 
 | Cascade threshold | Accuracy | Calls reaching the LLM | Mean latency | Billed per 1k |
 |---:|---:|---:|---:|---:|
@@ -179,7 +179,7 @@ With Qwen 3.7 Flash as the fallback
 | LLM only | 73.8% | 100% | 687 ms | $0.0190 |
 
 With Claude Haiku 4.5 as the fallback
-([report](https://github.com/surajsingh4507-del/FastBrain-/blob/main/benchmarks/results/intents-banking77-claude-haiku-4.5/report.md)):
+([report](https://github.com/surajsingh4507-del/FastBrain/blob/main/benchmarks/results/intents-banking77-claude-haiku-4.5/report.md)):
 
 | Cascade threshold | Accuracy | Calls reaching the LLM | Mean latency | Billed per 1k |
 |---:|---:|---:|---:|---:|

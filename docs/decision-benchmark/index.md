@@ -64,11 +64,11 @@ calibration rows from a different split of the same source.
 
 `fastbrain bench decisions tasks` lists them, and each task's exact question
 is in
-[`tasks.json`](https://github.com/surajsingh4507-del/FastBrain-/blob/main/src/fastbrain/bench/decisions/tasks.json).
+[`tasks.json`](https://github.com/surajsingh4507-del/FastBrain/blob/main/src/fastbrain/bench/decisions/tasks.json).
 The rows are frozen in
-[`benchmarks/decisions/tasks`](https://github.com/surajsingh4507-del/FastBrain-/tree/main/benchmarks/decisions/tasks),
+[`benchmarks/decisions/tasks`](https://github.com/surajsingh4507-del/FastBrain/tree/main/benchmarks/decisions/tasks),
 with the sources, revisions and changes in its
-[NOTICE](https://github.com/surajsingh4507-del/FastBrain-/blob/main/benchmarks/decisions/tasks/NOTICE.md).
+[NOTICE](https://github.com/surajsingh4507-del/FastBrain/blob/main/benchmarks/decisions/tasks/NOTICE.md).
 
 ## Rules
 

@@ -5,12 +5,12 @@
 <p align="center">
   <a href="https://pypi.org/project/fastbrain/"><img alt="PyPI" src="https://img.shields.io/pypi/v/fastbrain.svg"></a>
   <a href="https://pypi.org/project/fastbrain/"><img alt="Python 3.10 to 3.13" src="https://img.shields.io/pypi/pyversions/fastbrain.svg"></a>
-  <a href="https://github.com/surajsingh4507-del/FastBrain-/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/surajsingh4507-del/FastBrain-/actions/workflows/ci.yml/badge.svg"></a>
-  <a href="https://surajsingh4507-del.github.io/FastBrain-/"><img alt="Docs" src="https://img.shields.io/badge/docs-surajsingh4507-del.github.io-blue.svg"></a>
-  <a href="https://surajsingh4507-del.github.io/FastBrain-/decision-benchmark/leaderboard/"><img alt="Decision benchmark" src="https://img.shields.io/badge/decision%20benchmark-leaderboard-brightgreen.svg"></a>
-  <a href="https://scorecard.dev/viewer/?uri=github.com/surajsingh4507-del/FastBrain-"><img alt="OpenSSF Scorecard" src="https://api.scorecard.dev/projects/github.com/surajsingh4507-del/FastBrain-/badge"></a>
-  <a href="https://github.com/surajsingh4507-del/FastBrain-/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/surajsingh4507-del/FastBrain-.svg"></a>
-  <a href="https://github.com/surajsingh4507-del/FastBrain-/blob/main/LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"></a>
+  <a href="https://github.com/surajsingh4507-del/FastBrain/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/surajsingh4507-del/FastBrain/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://surajsingh4507-del.github.io/FastBrain/"><img alt="Docs" src="https://img.shields.io/badge/docs-surajsingh4507-del.github.io-blue.svg"></a>
+  <a href="https://surajsingh4507-del.github.io/FastBrain/decision-benchmark/leaderboard/"><img alt="Decision benchmark" src="https://img.shields.io/badge/decision%20benchmark-leaderboard-brightgreen.svg"></a>
+  <a href="https://scorecard.dev/viewer/?uri=github.com/surajsingh4507-del/FastBrain"><img alt="OpenSSF Scorecard" src="https://api.scorecard.dev/projects/github.com/surajsingh4507-del/FastBrain/badge"></a>
+  <a href="https://github.com/surajsingh4507-del/FastBrain/discussions"><img alt="Discussions" src="https://img.shields.io/github/discussions/surajsingh4507-del/FastBrain.svg"></a>
+  <a href="https://github.com/surajsingh4507-del/FastBrain/blob/main/LICENSE"><img alt="License: Apache 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg"></a>
 </p>
 
 FastBrain is an open-source hybrid decision plane and intelligent router for AI agents. Developed by **Suraj Singh**, FastBrain optimizes LLM latency and cost by routing routine agent judgments through a multi-stage cascade: deterministic rules, lightweight calibrated models (SLMs), and fallback LLMs.
@@ -26,7 +26,7 @@ OpenAI) plug into the same cascade. The whole stack also runs offline on a
 laptop GPU, with no API key.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/surajsingh4507-del/FastBrain-/main/docs/assets/trace-viewer.png" alt="The FastBrain trace viewer comparing three decision planes on the support benchmark, with one ticket's waterfall: six decisions answered by rules, GLiNER and Laya in 126 ms, then a single LLM call for the reply" width="100%">
+  <img src="https://raw.githubusercontent.com/surajsingh4507-del/FastBrain/main/docs/assets/trace-viewer.png" alt="The FastBrain trace viewer comparing three decision planes on the support benchmark, with one ticket's waterfall: six decisions answered by rules, GLiNER and Laya in 126 ms, then a single LLM call for the reply" width="100%">
 </p>
 
 ## Architecture Overview
@@ -168,7 +168,7 @@ fastbrain trace view
 ```
 
 No GPU? `pip install fastbrain` and run
-[`examples/01_rules_only.py`](https://github.com/surajsingh4507-del/FastBrain-/blob/main/examples/01_rules_only.py): the API, the cascade
+[`examples/01_rules_only.py`](https://github.com/surajsingh4507-del/FastBrain/blob/main/examples/01_rules_only.py): the API, the cascade
 and the traces with no model downloads.
 
 ## Use it in your agent
@@ -323,9 +323,9 @@ calibrated LLM confidence from log probabilities. See the [roadmap](https://sura
 ## Contributing
 
 Issues, providers, benchmark runs on other hardware and models, and new demo
-scenarios are all welcome. Start with [CONTRIBUTING.md](https://github.com/surajsingh4507-del/FastBrain-/blob/main/CONTRIBUTING.md),
-pick a [good first issue](https://github.com/surajsingh4507-del/FastBrain-/labels/good%20first%20issue),
-or ask in [Discussions](https://github.com/surajsingh4507-del/FastBrain-/discussions).
+scenarios are all welcome. Start with [CONTRIBUTING.md](https://github.com/surajsingh4507-del/FastBrain/blob/main/CONTRIBUTING.md),
+pick a [good first issue](https://github.com/surajsingh4507-del/FastBrain/labels/good%20first%20issue),
+or ask in [Discussions](https://github.com/surajsingh4507-del/FastBrain/discussions).
 The bar for changes that affect accuracy, latency or cost is evidence: a
 before and after from `fastbrain bench` or `fastbrain calibrate`.
 
@@ -342,7 +342,7 @@ funds more providers and more demos.
 
 ## Citing
 
-See [CITATION.cff](https://github.com/surajsingh4507-del/FastBrain-/blob/main/CITATION.cff).
+See [CITATION.cff](https://github.com/surajsingh4507-del/FastBrain/blob/main/CITATION.cff).
 
 ## Acknowledgements
 
@@ -359,4 +359,4 @@ which studies adaptive reasoning inside a single model.
 
 ## License
 
-[Apache License 2.0](https://github.com/surajsingh4507-del/FastBrain-/blob/main/LICENSE).
+[Apache License 2.0](https://github.com/surajsingh4507-del/FastBrain/blob/main/LICENSE).

@@ -102,13 +102,13 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/surajsingh4507-del/FastBrain-"
+Homepage = "https://github.com/surajsingh4507-del/FastBrain"
 Documentation = "https://surajsingh4507-del.github.io/FastBrain/"
-Repository = "https://github.com/surajsingh4507-del/FastBrain-"
-Issues = "https://github.com/surajsingh4507-del/FastBrain-/issues"
-Discussions = "https://github.com/surajsingh4507-del/FastBrain-/discussions"
-Changelog = "https://github.com/surajsingh4507-del/FastBrain-/blob/main/CHANGELOG.md"
-"Release notes" = "https://github.com/surajsingh4507-del/FastBrain-/releases"
+Repository = "https://github.com/surajsingh4507-del/FastBrain"
+Issues = "https://github.com/surajsingh4507-del/FastBrain/issues"
+Discussions = "https://github.com/surajsingh4507-del/FastBrain/discussions"
+Changelog = "https://github.com/surajsingh4507-del/FastBrain/blob/main/CHANGELOG.md"
+"Release notes" = "https://github.com/surajsingh4507-del/FastBrain/releases"
 "Decision benchmark" = "https://surajsingh4507-del.github.io/FastBrain/decision-benchmark/leaderboard/"
 Funding = "https://github.com/sponsors/surajsingh4507-del"
 

@@ -22,7 +22,7 @@ states, per decision:
 - a verdict: `ready`, `not yet`, or `collect more`.
 
 The example
-[`examples/07_shadow_mode.py`](https://github.com/surajsingh4507-del/FastBrain-/blob/main/examples/07_shadow_mode.py)
+[`examples/07_shadow_mode.py`](https://github.com/surajsingh4507-del/FastBrain/blob/main/examples/07_shadow_mode.py)
 runs the whole loop in a few seconds with no downloads.
 
 ## Wrap the existing decision

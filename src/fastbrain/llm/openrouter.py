@@ -11,7 +11,7 @@ from .openai_compat import OpenAICompatibleLLM
 __all__ = ["OPENROUTER_URL", "OpenRouterLLM"]
 
 OPENROUTER_URL = "https://openrouter.ai/api/v1"
-PROJECT_URL = "https://github.com/surajsingh4507-del/FastBrain-"
+PROJECT_URL = "https://github.com/surajsingh4507-del/FastBrain"
 
 
 class OpenRouterLLM(OpenAICompatibleLLM):

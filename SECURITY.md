@@ -3,7 +3,7 @@
 ## Reporting a vulnerability
 
 Please report vulnerabilities privately through
-[GitHub security advisories](https://github.com/surajsingh4507-del/FastBrain-/security/advisories/new),
+[GitHub security advisories](https://github.com/surajsingh4507-del/FastBrain/security/advisories/new),
 not in a public issue. Include what you found, how to reproduce it, and the
 impact you expect. You will get a response within a week, and a fix or a plan
 for one as soon as the issue is understood.

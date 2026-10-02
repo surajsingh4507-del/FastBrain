@@ -9,7 +9,7 @@ abstract: >-
 authors:
   - family-names: Kumar
     given-names: Suraj
-repository-code: https://github.com/surajsingh4507-del/FastBrain-
+repository-code: https://github.com/surajsingh4507-del/FastBrain
 license: Apache-2.0
 version: 0.4.1
 date-released: 2026-09-25

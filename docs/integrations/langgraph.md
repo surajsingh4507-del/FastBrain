@@ -10,7 +10,7 @@ and a decision node is a plain node function. Graphs, checkpointers,
 streaming and LangSmith tracing keep working as before.
 
 The complete example is
-[`examples/08_langgraph_router.py`](https://github.com/surajsingh4507-del/FastBrain-/blob/main/examples/08_langgraph_router.py).
+[`examples/08_langgraph_router.py`](https://github.com/surajsingh4507-del/FastBrain/blob/main/examples/08_langgraph_router.py).
 It runs with no model downloads and no API key.
 
 ## Route on a decision

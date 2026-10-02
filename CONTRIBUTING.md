@@ -6,12 +6,12 @@ and new demo scenarios are all welcome.
 
 ## Where to start
 
-- **[Good first issues](https://github.com/surajsingh4507-del/FastBrain-/labels/good%20first%20issue)**
+- **[Good first issues](https://github.com/surajsingh4507-del/FastBrain/labels/good%20first%20issue)**
   are scoped to a few files and say what "done" means.
-- **[Help wanted](https://github.com/surajsingh4507-del/FastBrain-/labels/help%20wanted)**
+- **[Help wanted](https://github.com/surajsingh4507-del/FastBrain/labels/help%20wanted)**
   issues are larger: new providers, calibrated LLM confidence, more models on
   the decision benchmark.
-- **Questions** go to [Discussions](https://github.com/surajsingh4507-del/FastBrain-/discussions/categories/q-a).
+- **Questions** go to [Discussions](https://github.com/surajsingh4507-del/FastBrain/discussions/categories/q-a).
 - **Benchmark runs** of a model follow the
   [submission guide](https://surajsingh4507-del.github.io/FastBrain/decision-benchmark/submitting/).
 
@@ -35,7 +35,7 @@ thing.
 ## Setting up
 
 ```bash
-git clone https://github.com/surajsingh4507-del/FastBrain-
+git clone https://github.com/surajsingh4507-del/FastBrain
 cd FastBrain
 
 # conda, with the local model stack and the right PyTorch build

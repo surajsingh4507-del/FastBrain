@@ -9,7 +9,7 @@ SDK's own objects: an `InputGuardrail`, a `ToolInputGuardrail` and plain
 `Agent` instances. Runs, handoffs, sessions and SDK tracing work as before.
 
 The complete example is
-[`examples/09_openai_agents.py`](https://github.com/surajsingh4507-del/FastBrain-/blob/main/examples/09_openai_agents.py).
+[`examples/09_openai_agents.py`](https://github.com/surajsingh4507-del/FastBrain/blob/main/examples/09_openai_agents.py).
 It runs against OpenRouter or OpenAI when a key is set, and prints the
 FastBrain decisions without one.
 

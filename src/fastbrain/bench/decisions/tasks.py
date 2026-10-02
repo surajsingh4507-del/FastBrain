@@ -27,7 +27,7 @@ __all__ = [
 ]
 
 DATA_URL = (
-    "https://raw.githubusercontent.com/surajsingh4507-del/FastBrain-/main/benchmarks/decisions/tasks"
+    "https://raw.githubusercontent.com/surajsingh4507-del/FastBrain/main/benchmarks/decisions/tasks"
 )
 SPLITS = ("calibration", "test")
 
