@@ -1,7 +1,8 @@
 name: Docs
 
-# Builds the documentation with MkDocs and publishes it to GitHub Pages.
-# One-time setup: Settings, Pages, Source: GitHub Actions.
+# Builds the documentation with MkDocs to verify it has no errors.
+# To publish to GitHub Pages: Settings > Pages > Source: GitHub Actions,
+# then uncomment the configure-pages, upload-pages-artifact, and deploy steps.
 
 on:
   push:
@@ -31,21 +32,3 @@ jobs:
           python-version: "3.12"
       - run: python -m pip install -e ".[openai,anthropic,otel]" "mkdocs-material>=9.5" "mkdocstrings[python]>=0.26"
       - run: mkdocs build --strict
-      - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
-      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
-        with:
-          path: site
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1
